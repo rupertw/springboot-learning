@@ -11,6 +11,8 @@
 
     <modules>
         <module>helloworld</module>
+        <module>properties</module>
+        <module>mybatis</module>
     </modules>
 
 </project>
