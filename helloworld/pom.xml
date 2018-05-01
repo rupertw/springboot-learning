@@ -9,7 +9,7 @@
     <packaging>jar</packaging>
 
     <name>helloworld</name>
-    <description>Demo project for Spring Boot</description>
+    <description>idea创建Spring Boot项目；打包启动jar</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
