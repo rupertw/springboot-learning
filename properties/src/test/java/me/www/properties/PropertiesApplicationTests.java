@@ -1,7 +1,7 @@
-package com.example.properties;
+package me.www.properties;
 
-import com.example.properties.property.ProjectSystem;
-import com.example.properties.property.User;
+import me.www.properties.property.ProjectSystem;
+import me.www.properties.property.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

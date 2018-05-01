@@ -1,4 +1,4 @@
-package com.example.properties;
+package me.www.properties;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
