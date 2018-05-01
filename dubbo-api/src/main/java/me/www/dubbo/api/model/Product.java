@@ -1,4 +1,4 @@
-package me.www.dubboapi.model;
+package me.www.dubbo.api.model;
 
 /**
  * @author: www

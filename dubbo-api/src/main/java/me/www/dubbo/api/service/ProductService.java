@@ -1,6 +1,7 @@
-package me.www.dubboapi.service;
+package me.www.dubbo.api.service;
 
-import me.www.dubboapi.model.Product;
+
+import me.www.dubbo.api.model.Product;
 
 /**
  * @author: www
