@@ -12,6 +12,7 @@
     <modules>
         <module>helloworld</module>
         <module>properties</module>
+        <module>web</module>
     </modules>
 
 </project>
