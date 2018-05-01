@@ -4,6 +4,7 @@ import me.www.web.dao.ProductDao;
 import me.www.web.model.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -21,8 +22,13 @@ public class ProductService {
     /**
      * 保存
      */
+    @Transactional(rollbackFor = Exception.class)
     public Integer save(Product product) {
-        return productDao.save(product);
+        Integer result = productDao.save(product);
+
+        //throw new RuntimeException("事务测试");
+
+        return result;
     }
 
 
