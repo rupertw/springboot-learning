@@ -1,4 +1,4 @@
-package me.www.dubboclient;
+package me.www.dubbo.client;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

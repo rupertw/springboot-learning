@@ -1,11 +1,13 @@
 package me.www.dubbo.api.model;
 
+import java.io.Serializable;
+
 /**
  * @author: www
  * @date: 2018/5/1 10:06
  * @description: TODO
  */
-public class Product {
+public class Product implements Serializable {
 
     /**
      * 产品id
