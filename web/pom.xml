@@ -9,7 +9,7 @@
     <packaging>jar</packaging>
 
     <name>web</name>
-    <description>mybatis集成（使用mysql数据库）；数据库事务；restful、restdocs；web过滤器、监听器</description>
+    <description>mybatis集成（使用mysql数据库）；数据库事务；restful、mvc拦截器、restdocs；web Servlet、Filter、Listener</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
