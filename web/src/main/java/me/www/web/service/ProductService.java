@@ -26,7 +26,7 @@ public class ProductService {
     public Integer save(Product product) {
         Integer result = productDao.save(product);
 
-        //throw new RuntimeException("事务测试");
+        //throw new RuntimeException("数据库事务测试");
 
         return result;
     }
