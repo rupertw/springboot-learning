@@ -27,7 +27,7 @@
         values(<include refid="entity_properties"/>)
     </insert>
 
-    <delete id="removeById" parameterType="java.lang.Integer">
+    <delete id="removeById" parameterType="java.lang.Long">
         delete from product
         where id = #{id}
     </delete>
@@ -42,7 +42,7 @@
         <where>id = #{id}</where>
     </update>
 
-    <select id="getById" resultMap="baseResultMap" parameterType="java.lang.Integer">
+    <select id="getById" resultMap="baseResultMap" parameterType="java.lang.Long">
         select
         <include refid="table_columns"/>
         from product

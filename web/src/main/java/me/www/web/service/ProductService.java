@@ -1,35 +1,20 @@
 package me.www.web.service;
 
-import me.www.web.dao.ProductDao;
 import me.www.web.model.Product;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 /**
  * @author: www
- * @date: 2018/5/1 10:45
+ * @date: 2018/5/1 15:34
  * @description: TODO
  */
-@Service
-public class ProductService {
-
-    @Autowired
-    private ProductDao productDao;
+public interface ProductService {
 
     /**
      * 保存
      */
-    @Transactional(rollbackFor = Exception.class)
-    public Integer save(Product product) {
-        Integer result = productDao.save(product);
-
-        //throw new RuntimeException("数据库事务测试");
-
-        return result;
-    }
+    Integer save(Product product);
 
 
     /**
@@ -37,18 +22,14 @@ public class ProductService {
      *
      * @param id
      */
-    public void removeById(Integer id) {
-        productDao.removeById(id);
-    }
+    void removeById(Long id);
 
     /**
      * 更新记录
      *
      * @param product
      */
-    public void update(Product product) {
-        productDao.update(product);
-    }
+    void update(Product product);
 
     /**
      * 查
@@ -56,17 +37,13 @@ public class ProductService {
      * @param id
      * @return
      */
-    public Product getById(Integer id) {
-        return productDao.getById(id);
-    }
+    Product getById(Long id);
 
     /**
      * 查询所有记录
      *
      * @return
      */
-    public List<Product> listAll() {
-        return productDao.listAll();
-    }
+    List<Product> listAll();
 
 }

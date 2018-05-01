@@ -23,7 +23,7 @@ public interface ProductDao {
      *
      * @param id
      */
-    void removeById(Integer id);
+    void removeById(Long id);
 
     /**
      * 更新记录
@@ -38,7 +38,7 @@ public interface ProductDao {
      * @param id
      * @return
      */
-    Product getById(Integer id);
+    Product getById(Long id);
 
     /**
      * 查询所有记录
