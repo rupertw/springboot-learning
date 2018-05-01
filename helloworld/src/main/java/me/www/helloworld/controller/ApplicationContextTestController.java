@@ -11,6 +11,7 @@ import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.context.support.WebApplicationContextUtils;
 
 import javax.servlet.ServletContext;
+import java.util.Map;
 
 /**
  * @author: www
@@ -33,6 +34,8 @@ public class ApplicationContextTestController implements ServletContextAware, Ap
 
         // true
         System.out.println(this.applicationContext == root);
+
+        Map<String, ServletContext> map = root.getBeansOfType(ServletContext.class);
 
         return "Hello,World!";
     }
