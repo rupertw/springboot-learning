@@ -4,9 +4,8 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import me.www.dubbo.api.model.Product;
 import me.www.dubbo.api.service.ProductService;
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletResponse;
@@ -22,7 +21,7 @@ public class ProductController {
     @Reference(version = "1.0.0")
     private ProductService productService;
 
-    @RequestMapping(value = "/products/{id}", method = RequestMethod.GET)
+    @GetMapping(value = "/products/{id}")
     public Product getById(@PathVariable("id") Long id, HttpServletResponse response) {
         Product product = productService.getById(id);
         if (product == null) {
