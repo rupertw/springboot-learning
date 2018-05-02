@@ -12,6 +12,8 @@
     <description>idea创建Spring Boot项目；打包启动jar</description>
 
     <parent>
+        <!-- The spring-boot-starter-parent is a special starter that provides useful Maven defaults.
+        （设置Spring Boot应用的一些属性信息、项目构建依赖的插件与构建方式）-->
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.0.1.RELEASE</version>
@@ -26,6 +28,7 @@
 
     <dependencies>
         <dependency>
+            <!-- A  ’Starter‘ provides dependencies that you are likely to need when developing a specific type of application.-->
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
