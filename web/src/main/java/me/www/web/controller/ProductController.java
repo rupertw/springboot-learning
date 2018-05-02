@@ -20,22 +20,22 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
-    @RequestMapping(value = "/products", method = RequestMethod.POST)
+    @PostMapping(value = "/products")
     public void save(@RequestBody Product product) {
         productService.save(product);
     }
 
-    @RequestMapping(value = "/products/{id}", method = RequestMethod.DELETE)
+    @DeleteMapping(value = "/products/{id}")
     public void removeById(@PathVariable("id") Long id) {
         productService.removeById(id);
     }
 
-    @RequestMapping(value = "/products", method = RequestMethod.PUT)
+    @PutMapping(value = "/products")
     public void update(@RequestBody Product product) {
         productService.update(product);
     }
 
-    @RequestMapping(value = "/products/{id}", method = RequestMethod.GET)
+    @GetMapping(value = "/products/{id}")
     public Product getById(@PathVariable("id") Long id, HttpServletResponse response) {
         Product product = productService.getById(id);
         if (product == null) {
@@ -45,7 +45,7 @@ public class ProductController {
         return product;
     }
 
-    @RequestMapping(value = "/products", method = RequestMethod.GET)
+    @GetMapping(value = "/products")
     public List<Product> listAll() {
         return productService.listAll();
     }
