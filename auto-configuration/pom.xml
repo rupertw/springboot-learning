@@ -17,6 +17,7 @@
         <module>boot-depency</module>
         <module>lrucache-api</module>
         <module>non-con-lrucache</module>
+        <module>con-lrucache</module>
     </modules>
 
 </project>
