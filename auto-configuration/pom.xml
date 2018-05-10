@@ -18,6 +18,7 @@
         <module>lrucache-api</module>
         <module>non-con-lrucache</module>
         <module>con-lrucache</module>
+        <module>lrucache-spring-boot-autoconfigure</module>
     </modules>
 
 </project>
