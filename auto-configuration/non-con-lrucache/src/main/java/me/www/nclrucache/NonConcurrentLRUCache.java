@@ -50,7 +50,7 @@ public class NonConcurrentLRUCache<K, V> implements LRUCache<K, V> {
 
     @Override
     public String toString() {
-        return "NonConcurrentLRUCache" + map;
+        return super.toString() + map;
     }
 
     /**

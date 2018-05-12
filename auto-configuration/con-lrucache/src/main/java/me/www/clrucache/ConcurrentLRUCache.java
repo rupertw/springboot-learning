@@ -59,6 +59,6 @@ public class ConcurrentLRUCache<K, V> implements LRUCache<K, V> {
 
     @Override
     public String toString() {
-        return "ConcurrentLRUCache" + map;
+        return super.toString() + map;
     }
 }
