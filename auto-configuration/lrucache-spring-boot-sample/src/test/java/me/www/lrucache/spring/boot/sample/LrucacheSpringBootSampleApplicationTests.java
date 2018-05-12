@@ -1,4 +1,4 @@
-package me.www.bootdepency;
+package me.www.lrucache.spring.boot.sample;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class BootDepencyApplicationTests {
+public class LrucacheSpringBootSampleApplicationTests {
 
     @Test
     public void contextLoads() {

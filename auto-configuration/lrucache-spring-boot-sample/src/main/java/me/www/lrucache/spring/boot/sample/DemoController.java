@@ -1,4 +1,4 @@
-package me.www.bootdepency;
+package me.www.lrucache.spring.boot.sample;
 
 import me.www.lrucache.LRUCache;
 import org.springframework.beans.factory.annotation.Autowired;

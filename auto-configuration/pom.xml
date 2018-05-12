@@ -26,7 +26,7 @@
         <module>con-lrucache</module>
         <module>lrucache-spring-boot-autoconfigure</module>
         <module>lrucache-spring-boot-starter</module>
-        <module>boot-depency</module>
+        <module>lrucache-spring-boot-sample</module>
     </modules>
 
 </project>
