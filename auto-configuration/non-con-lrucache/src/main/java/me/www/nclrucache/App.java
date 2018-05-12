@@ -17,7 +17,7 @@ public class App {
         cache.put("k4", "v4");
         cache.get("k1");
         cache.put("k5", "v5");
-        System.out.println(cache); // {k3=v3, k4=v4, k1=v1, k5=v5}
+        System.out.println(cache); // NonConcurrentLRUCache{k3=v3, k4=v4, k1=v1, k5=v5}
     }
 
 }

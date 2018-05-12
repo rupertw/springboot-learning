@@ -13,9 +13,18 @@ import java.util.Set;
  */
 public class NonConcurrentLRUCache<K, V> implements LRUCache<K, V> {
 
+    public static final Integer DEFAULT_CACHE_SIZE = 16;
+
     private LinkedHashMap<K, V> map;
 
-    public NonConcurrentLRUCache(int cacheSize) {
+    public NonConcurrentLRUCache() {
+        map = new LinkedHashMaptLRUCache<K, V>(NonConcurrentLRUCache.DEFAULT_CACHE_SIZE);
+    }
+
+    public NonConcurrentLRUCache(Integer cacheSize) {
+        if (cacheSize == null || cacheSize <= 0) {
+            cacheSize = NonConcurrentLRUCache.DEFAULT_CACHE_SIZE;
+        }
         map = new LinkedHashMaptLRUCache<K, V>(cacheSize);
     }
 

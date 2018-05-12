@@ -13,15 +13,25 @@ import java.util.Set;
  */
 public class ConcurrentLRUCache<K, V> implements LRUCache<K, V> {
 
+    public static final Integer DEFAULT_CACHE_SIZE = 16;
+
     public static final int DEFAULT_CONCURENCY_LEVEL = 32;
 
-    private final ConcurrentLinkedHashMap<K, V> map;
+    private ConcurrentLinkedHashMap<K, V> map;
 
-    public ConcurrentLRUCache(int cacheSize) {
-        this(cacheSize, DEFAULT_CONCURENCY_LEVEL);
+    public ConcurrentLRUCache() {
+        initMap(ConcurrentLRUCache.DEFAULT_CACHE_SIZE, DEFAULT_CONCURENCY_LEVEL);
     }
 
-    private ConcurrentLRUCache(int capacity, int concurrency) {
+    public ConcurrentLRUCache(Integer cacheSize) {
+        if (cacheSize == null || cacheSize <= 0) {
+            cacheSize = ConcurrentLRUCache.DEFAULT_CACHE_SIZE;
+        }
+
+        initMap(cacheSize, DEFAULT_CONCURENCY_LEVEL);
+    }
+
+    private void initMap(Integer capacity, int concurrency) {
         map = new ConcurrentLinkedHashMap.Builder<K, V>().weigher(Weighers.<V>singleton())
                 .initialCapacity(capacity).maximumWeightedCapacity(capacity)
                 .concurrencyLevel(concurrency).build();
