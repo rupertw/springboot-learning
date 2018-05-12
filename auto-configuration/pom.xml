@@ -19,6 +19,7 @@
         <module>non-con-lrucache</module>
         <module>con-lrucache</module>
         <module>lrucache-spring-boot-autoconfigure</module>
+        <module>lrucache-spring-boot-starter</module>
     </modules>
 
 </project>
