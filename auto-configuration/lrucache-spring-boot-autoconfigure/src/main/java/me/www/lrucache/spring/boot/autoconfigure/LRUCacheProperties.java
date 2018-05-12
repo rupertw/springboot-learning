@@ -9,26 +9,26 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * @date: 2018/5/12 16:39
  * @description: TODO
  */
-@ConfigurationProperties(prefix = LrucacheProperties.LRUCACHE_PREFIX)
-public class LrucacheProperties {
+@ConfigurationProperties(prefix = LRUCacheProperties.LRUCACHE_PREFIX)
+public class LRUCacheProperties {
 
     public static final String LRUCACHE_PREFIX = "lrucache";
 
     /**
-     * Type
+     * LRUCache type. By default, auto-detected according to the environment.
      */
-    private String type;
+    private LRUCacheType type;
 
     /**
      * cacheSize
      */
     private Integer cacheSize;
 
-    public String getType() {
+    public LRUCacheType getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(LRUCacheType type) {
         this.type = type;
     }
 
