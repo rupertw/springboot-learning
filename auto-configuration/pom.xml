@@ -12,7 +12,7 @@
     <artifactId>auto-configuration</artifactId>
     <packaging>pom</packaging>
     <description>auto-configuration、自定义starter</description>
-    
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -21,12 +21,12 @@
     </properties>
 
     <modules>
-        <module>boot-depency</module>
         <module>lrucache-api</module>
         <module>non-con-lrucache</module>
         <module>con-lrucache</module>
         <module>lrucache-spring-boot-autoconfigure</module>
         <module>lrucache-spring-boot-starter</module>
+        <module>boot-depency</module>
     </modules>
 
 </project>
