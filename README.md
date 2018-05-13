@@ -34,7 +34,16 @@
     
     **5.lrucache-spring-boot-starter** &nbsp;&nbsp;&nbsp;自定义spring-boot-starter
     
-    **6.lrucache-spring-boot-sample** &nbsp;&nbsp;&nbsp;Spring Boot集成lrucache-api示例
+    **6.lrucache-spring-boot-sample** &nbsp;&nbsp;&nbsp;Spring Boot集成lrucache-api
+    
+    项目名称                    | 描述
+    ----------------------------|------------------------------------------------------------------------------------------
+    lrucache-api        | 定义LRUCache接口
+    non-con-lrucache          | 基于LinkedHashMap实现LRUCache接口（非线程安全）
+    con-lrucache        | 基于ConcurrentLinkedHashMap实现LRUCache接口（线程安全）
+    lrucache-spring-boot-autoconfigure          | 自定义spring-boot-autoconfigure
+    lrucache-spring-boot-starter          | 自定义spring-boot-starter
+    lrucache-spring-boot-sample     | Spring Boot集成lrucache-api
 
 ## 环境
 
