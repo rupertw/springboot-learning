@@ -48,6 +48,6 @@
 * JDK 1.8
 * Spring Boot 2.0.1.RELEASE
 * MySQL 5.7
-* Intellij Idea
-* Maven latest
+* IntelliJ IDEA
+* Maven 3.5.0
 * Git VCS
