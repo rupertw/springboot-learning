@@ -22,9 +22,15 @@
 
 * **auto-configuration**
 
+    Spring Boot自动化配置，实现自定义autoconfigure Module、Starter Module
 
-
-
+    1.ddd
+    
+    2.ddd
+    
+    3.ddd
+    
+    4.ddd
 
 ## 环境
 
