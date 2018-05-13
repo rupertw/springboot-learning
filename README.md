@@ -20,9 +20,9 @@
 
     Spring Boot集成dubbo
 
-* **auto-configuration**
+* **auto-configuration（重点）**
 
-    Spring Boot自动化配置，实现自定义autoconfigure Module、Starter Module，子项目如下：
+    Spring Boot自动配置，实现自定义autoconfigure Module、Starter Module，子项目如下：
     
     项目名称                    | 描述
     ----------------------------|------------------------------------------------------------------------------------------
@@ -37,11 +37,11 @@
     
     参考：
     
-    [Spring Boot Reference Guide](https://docs.spring.io/spring-boot/docs/2.0.1.RELEASE/reference/html/)
+        [Spring Boot Reference Guide](https://docs.spring.io/spring-boot/docs/2.0.1.RELEASE/reference/html/)
     
-    [Spring Boot集成Spring Cache源码](https://github.com/spring-projects/spring-boot/tree/master/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/cache)
+        [Spring Boot集成Spring Cache源码](https://github.com/spring-projects/spring-boot/tree/master/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/cache)
     
-    [Spring Boot核心原理－自动配置](https://blog.csdn.net/xiaobing_122613/article/details/54943448)
+        [Spring Boot核心原理－自动配置](https://blog.csdn.net/xiaobing_122613/article/details/54943448)
 
 ## 环境
 
