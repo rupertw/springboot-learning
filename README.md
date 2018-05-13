@@ -22,19 +22,7 @@
 
 * **auto-configuration**
 
-    Spring Boot自动化配置，实现自定义autoconfigure Module、Starter Module
-
-    **1.lrucache-api** &nbsp;&nbsp;&nbsp;定义LRUCache接口
-
-    **2.non-con-lrucache** &nbsp;&nbsp;&nbsp;基于LinkedHashMap实现LRUCache接口（非线程安全）
-    
-    **3.con-lrucache** &nbsp;&nbsp;&nbsp;基于ConcurrentLinkedHashMap实现LRUCache接口（线程安全）
-    
-    **4.lrucache-spring-boot-autoconfigure** &nbsp;&nbsp;&nbsp;自定义spring-boot-autoconfigure
-    
-    **5.lrucache-spring-boot-starter** &nbsp;&nbsp;&nbsp;自定义spring-boot-starter
-    
-    **6.lrucache-spring-boot-sample** &nbsp;&nbsp;&nbsp;Spring Boot集成lrucache-api
+    Spring Boot自动化配置，实现自定义autoconfigure Module、Starter Module，子项目如下：
     
     项目名称                    | 描述
     ----------------------------|------------------------------------------------------------------------------------------
@@ -44,6 +32,16 @@
     lrucache-spring-boot-autoconfigure          | 自定义spring-boot-autoconfigure
     lrucache-spring-boot-starter          | 自定义spring-boot-starter
     lrucache-spring-boot-sample     | Spring Boot集成lrucache-api
+
+    项目最终实现Spring Boot集成lrucache-api的不同实现。通过包依赖以及属性lrucache.type自动配置LRUCache实例（唯一），当未设置属性lrucache.type时，按照NonConcurrentLRUCache、ConcurrentLRUCache优先顺序实例化。此外，通过属性lrucache.cache-size可配置缓存容量大小。
+    
+    参考：
+    
+    [Spring Boot Reference Guide](https://docs.spring.io/spring-boot/docs/2.0.1.RELEASE/reference/html/)
+    
+    [Spring Boot集成Spring Cache源码](https://github.com/spring-projects/spring-boot/tree/master/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/cache)
+    
+    [Spring Boot核心原理－自动配置](https://blog.csdn.net/xiaobing_122613/article/details/54943448)
 
 ## 环境
 
