@@ -24,17 +24,17 @@
 
     Spring Boot自动化配置，实现自定义autoconfigure Module、Starter Module
 
-    1.lrucache-api &nbsp;&nbsp;&nbsp;定义LRUCache接口
+    **1.lrucache-api** &nbsp;&nbsp;&nbsp;定义LRUCache接口
 
-    2.non-con-lrucache &nbsp;&nbsp;&nbsp;基于LinkedHashMap实现LRUCache接口（非线程安全）
+    **2.non-con-lrucache** &nbsp;&nbsp;&nbsp;基于LinkedHashMap实现LRUCache接口（非线程安全）
     
-    3.con-lrucache &nbsp;&nbsp;&nbsp;基于ConcurrentLinkedHashMap实现LRUCache接口（线程安全）
+    **3.con-lrucache** &nbsp;&nbsp;&nbsp;基于ConcurrentLinkedHashMap实现LRUCache接口（线程安全）
     
-    4.lrucache-spring-boot-autoconfigure &nbsp;&nbsp;&nbsp;自定义spring-boot-autoconfigure
+    **4.lrucache-spring-boot-autoconfigure** &nbsp;&nbsp;&nbsp;自定义spring-boot-autoconfigure
     
-    5.lrucache-spring-boot-starter &nbsp;&nbsp;&nbsp;自定义spring-boot-starter
+    **5.lrucache-spring-boot-starter** &nbsp;&nbsp;&nbsp;自定义spring-boot-starter
     
-    6.lrucache-spring-boot-sample &nbsp;&nbsp;&nbsp;Spring Boot集成lrucache-api示例
+    **6.lrucache-spring-boot-sample** &nbsp;&nbsp;&nbsp;Spring Boot集成lrucache-api示例
 
 ## 环境
 
