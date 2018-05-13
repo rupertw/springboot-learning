@@ -50,3 +50,4 @@
 * MySQL 5.7
 * Intellij Idea
 * Maven latest
+* Git VCS
