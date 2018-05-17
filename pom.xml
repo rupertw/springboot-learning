@@ -17,6 +17,7 @@
         <module>dubbo-server</module>
         <module>dubbo-client</module>
         <module>auto-configuration</module>
+        <module>actuator</module>
     </modules>
 
 </project>
