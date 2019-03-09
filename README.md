@@ -46,7 +46,7 @@
 ## 环境
 
 * JDK 1.8
-* Spring Boot 2.0.1.RELEASE
+* Spring Boot 2.1.3.RELEASE
 * MySQL 5.7
 * IntelliJ IDEA
 * Maven 3.5.0
