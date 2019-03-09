@@ -22,7 +22,7 @@
 
 * **auto-configuration（重点）**
 
-    Spring Boot自动配置，实现自定义autoconfigure Module、Starter Module，子项目如下：
+    Spring Boot自动配置，实现自定义autoconfigure Module、starter Module，子项目如下：
     
     项目名称                    | 描述
     ----------------------------|------------------------------------------------------------------------------------------
