@@ -18,14 +18,14 @@ public class NonConcurrentLRUCache<K, V> implements LRUCache<K, V> {
     private LinkedHashMap<K, V> map;
 
     public NonConcurrentLRUCache() {
-        map = new LinkedHashMaptLRUCache<K, V>(NonConcurrentLRUCache.DEFAULT_CACHE_SIZE);
+        map = new LinkedHashMaptLRUCache<>(NonConcurrentLRUCache.DEFAULT_CACHE_SIZE);
     }
 
     public NonConcurrentLRUCache(Integer cacheSize) {
         if (cacheSize == null || cacheSize <= 0) {
             cacheSize = NonConcurrentLRUCache.DEFAULT_CACHE_SIZE;
         }
-        map = new LinkedHashMaptLRUCache<K, V>(cacheSize);
+        map = new LinkedHashMaptLRUCache<>(cacheSize);
     }
 
     @Override
@@ -64,7 +64,7 @@ public class NonConcurrentLRUCache<K, V> implements LRUCache<K, V> {
      * @param <K>
      * @param <V>
      */
-    private static class LinkedHashMaptLRUCache<K, V> extends LinkedHashMap<K, V> {
+    private class LinkedHashMaptLRUCache<K, V> extends LinkedHashMap<K, V> {
         /**
          * 缓存容量大小
          */

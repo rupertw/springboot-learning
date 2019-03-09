@@ -32,7 +32,7 @@ public class ConcurrentLRUCache<K, V> implements LRUCache<K, V> {
     }
 
     private void initMap(Integer capacity, int concurrency) {
-        map = new ConcurrentLinkedHashMap.Builder<K, V>().weigher(Weighers.<V>singleton())
+        map = new ConcurrentLinkedHashMap.Builder<K, V>().weigher(Weighers.singleton())
                 .initialCapacity(capacity).maximumWeightedCapacity(capacity)
                 .concurrencyLevel(concurrency).build();
     }
