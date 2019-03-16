@@ -13,9 +13,6 @@
         <module>helloworld</module>
         <module>properties</module>
         <module>web</module>
-        <module>dubbo-api</module>
-        <module>dubbo-server</module>
-        <module>dubbo-client</module>
         <module>auto-configuration</module>
         <module>actuator</module>
     </modules>
