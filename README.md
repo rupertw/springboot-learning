@@ -16,10 +16,6 @@
 
     mybatis集成（使用mysql数据库）；数据库事务；restful、mvc拦截器、restdocs；web Servlet、Filter、Listener
 
-* **dubbo-api、dubbo-server、dubbo-client**
-
-    Spring Boot集成dubbo
-
 * **auto-configuration（重点）**
 
     Spring Boot自动配置，实现自定义autoconfigure Module、starter Module，子项目如下：
