@@ -5,7 +5,7 @@
     <parent>
         <artifactId>auto-configuration</artifactId>
         <groupId>me.www</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -27,19 +27,19 @@
         <dependency>
             <groupId>me.www</groupId>
             <artifactId>lrucache-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${revision}</version>
             <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>me.www</groupId>
             <artifactId>non-con-lrucache</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${revision}</version>
             <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>me.www</groupId>
             <artifactId>con-lrucache</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${revision}</version>
             <optional>true</optional>
         </dependency>
         <dependency>
