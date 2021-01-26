@@ -15,6 +15,7 @@
         <module>web</module>
         <module>auto-configuration</module>
         <module>actuator</module>
+        <module>websocket</module>
     </modules>
 
     <properties>
