@@ -10,7 +10,7 @@
 
 * **properties**
 
-    Spring Boot属性配置（Spring Booot组件属性、自定义属性、多环境配置）
+    Spring Boot属性配置（Spring Boot组件属性、自定义属性、多环境配置）
 
 * **web**
 
