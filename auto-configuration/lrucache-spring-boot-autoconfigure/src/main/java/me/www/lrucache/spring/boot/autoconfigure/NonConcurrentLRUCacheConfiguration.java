@@ -17,7 +17,6 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @ConditionalOnClass({LRUCache.class, NonConcurrentLRUCache.class})
-@ConditionalOnMissingBean(LRUCache.class)
 @Conditional({LRUCacheCondition.class})
 class NonConcurrentLRUCacheConfiguration {
 
@@ -30,6 +29,7 @@ class NonConcurrentLRUCacheConfiguration {
     }
 
     @Bean
+    @ConditionalOnMissingBean(LRUCache.class)
     public NonConcurrentLRUCache lruCache() {
         logger.info("LRUCache: Bean of Type NonConcurrentLRUCache is initialized");
         return new NonConcurrentLRUCache(lruCacheProperties.getCacheSize());
